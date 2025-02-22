@@ -1,0 +1,78 @@
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen layout */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Left text container */
+.left {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: flex-start; /* Aligns text to the left */
+  background: #f4f4f4;
+  padding: 3rem; /* Adds space around the text */
+  gap: 0.75rem;
+}
+
+.left h1 {
+  font-size: 3em;
+  margin-bottom: 1rem;
+}
+
+.left p, .left li {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 90%; /* Prevents text from spanning too wide */
+}
+
+/* Right image container */
+.right {
+  width: 50vw;
+  height: 100vh;
+  background: url('/img/davecross.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  html, body {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .left {
+    padding: 2rem;
+  }
+}
+
+#book-list {
+  width: 100%;
+}
+
+.cover {
+  height: 120px;
+  /* float: left; */
+  padding-left: 5px;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
