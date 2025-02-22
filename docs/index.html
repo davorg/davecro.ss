@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dave Cross</title>
+  <style>
+    /* Reset margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Full-screen layout */
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Left text container */
+    .left {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Aligns content to the top */
+      align-items: flex-start; /* Aligns text to the left */
+      background: #f4f4f4;
+      padding: 3rem; /* Adds space around the text */
+      gap: 0.75rem;
+    }
+
+    .left h1 {
+      font-size: 3em;
+      margin-bottom: 1rem;
+    }
+
+    .left p, .left li {
+      font-size: 1.2em;
+      color: #333;
+      max-width: 90%; /* Prevents text from spanning too wide */
+    }
+
+    /* Right image container */
+    .right {
+      width: 50vw;
+      height: 100vh;
+      background: url('davecross.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      html, body {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100vw;
+        height: 50vh;
+      }
+
+      .left {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <h1>Dave Cross</h1>
+    <p>Old geek.</p>
+    <p>I make things from software. Some of them are useful.</p>
+    <ul>
+      <li><a href="https://davecross.co.uk/">Professional site</a></li>
+      <li><a href="https://perlhacks.com/">Perl blog</a></li>
+      <li><a href="https://davecross.co.uk/">Books I've written</a></li>
+      <li><a href="https://davecross.substack.com/">A very occasional newsletter</a></li>
+      <li><a href="https://blog.dave.org.uk/">A badly-neglected blog</a></li>
+      <li><a href="https://links.davecross.co.uk/">Far too many other links</a></li>
+    </ul>
+  </div>
+  <div class="right"></div>
+</body>
+</html>
+
