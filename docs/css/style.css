@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
 }
 
@@ -28,6 +28,8 @@ html, body {
 
 .left h1 {
   font-size: 3em;
+  font-weight: 700;
+  font-family: 'Lora', serif;
   margin-bottom: 1rem;
 }
 
