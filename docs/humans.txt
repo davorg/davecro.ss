@@ -1,0 +1,10 @@
+/* TEAM */
+Site: https://davecro.ss/
+Maintainer: Dave Cross
+GitHub: https://github.com/davorg/davecro.ss
+Links: https://links.davecross.co.uk/
+Built with: Vim
+
+/* THANKS */
+Thanks to: South Sudan
+
